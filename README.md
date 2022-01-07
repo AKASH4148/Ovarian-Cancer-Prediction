@@ -33,12 +33,15 @@ Procedure:-
 
 Data Collection: Collected ovarian cancer diagnose blood test data from kaggle. The dataset has 235 patients blood test record which can be adopted to build a model. Data initially had 49 columns (features) from which after doing exploratory data analysis we left of with just 8 columns which we made use to train a model which can predict if person has ovarian cancer or not.
 
-Model Building: We build a model using Support Vector Machine (SVM) algorithm which gave us around 94% accuracy which mean when we pass a particular observation to the data there are 94% chances that it is predicted correctly which is far better than using a single test to diagnose ovarian cancer. To evaluate the model we use confusion matrix.
+Model Building: We build a model using Support Vector Machine (SVM) algorithm which gave us around 94% accuracy which mean when we pass a particular observation to the data there are 94% chances that it is predicted correctly which is far better than using a single test to diagnose ovarian cancer. To evaluate the model we use confusion matrix.<br>
+
+
+
                                                                  Actual 
                                                    Malignant      Benign 
       Predicted      Malignant          20                   5
                             Benign                 1                      82
-                                                      Fig.7
+                                                      Fig.<br>
  In Fig.7 confusion matrix 20 observation were malignant and model correctly predicted it as malignant same way 82 observation were benign and model predicted it as benign. But at some point our model made errors 5 observations were Benign but our model predicted it as malignant (Type 1 error ) and 1 observation was malignant and model predicted it as benign (Type 2 error). Our motive should be to reduce error especially type 2 error because if the person in malignant and model predicted it as benign than there are chances that tumor may spread to others parts of the body if proper treatment is not taken.
 
 Conclusion: It is difficult to diagnose ovarian cancer based on single test. So with the help of machine learning technology we build a model to predict if person has ovarian cancer or not. Also we have deployed model into 
